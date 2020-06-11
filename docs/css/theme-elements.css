@@ -8991,7 +8991,7 @@ body.page-transition-active {
 	opacity: 0 !important;
 }
 
-/* 
+/*
 Image 360┬║ Viewer
 Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 */
@@ -10464,6 +10464,11 @@ html.ie11 .scroll-to-top {
 /* Section Featured */
 section.section {
 	background: #f7f7f7;
+	border-top: 5px solid #f1f1f1;
+	margin: 30px 0;
+	padding: 50px 0;
+}
+section.sectionnon {
 	border-top: 5px solid #f1f1f1;
 	margin: 30px 0;
 	padding: 50px 0;
@@ -13195,6 +13200,20 @@ html.boxed .slider-container {
 	z-index: 2;
 	max-width: 90%;
 	font-size: 17px;
+	padding: 13px 21px 2px;
+	bottom: 13%;
+}
+.thumb-info .thumb-info-title1 {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	background: rgba(33, 37, 41, 0.8);
+	color: #FFF;
+	font-weight: 600;
+	left: 0;
+	letter-spacing: -.05em;
+	position: absolute;
+	z-index: 2;
+	max-width: 90%;
 	padding: 13px 21px 2px;
 	bottom: 13%;
 }
