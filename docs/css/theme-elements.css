@@ -13092,7 +13092,7 @@ html.boxed .slider-container {
 
 .thumb-info .thumb-info-wrapper:after {
 	content: "";
-	background: rgba(33, 37, 41, 0.8);
+	background: rgba(33, 37, 41, 0.3);
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	border-radius: 4px;
