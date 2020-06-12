@@ -11080,12 +11080,12 @@ html.side-panel.side-panel-open.side-panel-push.side-panel-right .body {
 
 .slider-container .tp-opacity-overlay {
 	background: #000;
-	opacity: 0.75;
+	opacity: 0.5;
 }
 
 .slider-container .tp-opacity-overlay-light {
 	background: #FFF;
-	opacity: 0.75;
+	opacity: 0.5;
 }
 
 .slider-container.transparent {
