@@ -1,1 +1,40 @@
-/* Add here all your CSS customizations */
+/*テーブルをレスポンシブ化する */
+.agn-left {
+  text-align: left;/*thはセンター揃えなので左揃えにしたいthセルに適用*/
+}
+.pc-tablehead th{
+  white-space: nowrap;/*セル内で改行しない*/
+}
+/*スマホ表示用*/
+  @media screen and (max-width: 480px) {
+    .pc-tablehead{
+      display: none;/*【1】PCで1行目に表示されているタイトルを非表示に*/
+    }
+    .vertical-table th{
+      border-bottom: none;/*【2】上下の枠線が二重になるのを防止*/
+      display: block;/*【3】PCの一列目を縦積みにする*/
+      width: 100%;
+    }
+    .vertical-table td {
+      border-bottom: none;/*【2】上下の枠線が二重になるのを防止*/
+      display: block;/*【3】PCの2列目以降も縦積みにする*/
+      width: 100%;
+    }
+      .last td:last-child {
+        border-bottom: solid 1px #8a9992;/*【4】表の一番下になるセルだけ下線を引く*/
+     }
+    .vertical-table td:before {
+      content: attr(aria-label);/*【5】aria-labelで指定した値を表示させる*/
+      display: inline-block;
+      font-weight: bold;
+      float: left;
+      text-align: left;
+      padding-right: 1em;
+      white-space: nowrap;
+    }
+    .label br {
+      display: none;/*【6】PCでセル内改行した箇所を改行させない*/
+    }
+/*スマホ表示用ここまで*/
+}
+/*テーブルをレスポンシブ化するここまで */
