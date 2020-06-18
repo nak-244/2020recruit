@@ -38,3 +38,23 @@
 /*スマホ表示用ここまで*/
 }
 /*テーブルをレスポンシブ化するここまで */
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+}
