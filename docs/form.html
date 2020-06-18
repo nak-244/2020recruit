@@ -108,12 +108,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-							<h1 data-title-border>先輩たちの声</h1>
+							<h1 data-title-border>エントリーフォーム</h1>
 						</div>
 						<div class="col-md-4 order-1 order-md-2 align-self-center">
 							<ul class="breadcrumb d-block text-md-right">
 								<li><a href="index.html">Home</a></li>
-								<li class="active">先輩たちの声</li>
+								<li class="active">エントリーフォーム</li>
 							</ul>
 						</div>
 					</div>
@@ -124,6 +124,170 @@
 				<div class="row">
 					<div class="col" style="min-height: 250px;">
 						<h2 class="text-uppercase text-color-dark font-weight-bold">エントリーフォーム</h2>
+
+						<form action="./Monaka/confirmation.php" method="post" enctype="multipart/form-data">
+							<div class="pb-5 text-left" style="">
+								<div class="container">
+									<div class="row p-3">
+										<div class="border col-md-12">
+											<p class="lead mt-3"><span class="badge badge-secondary">必須</span>ご希望の雇用形態 </p>
+											<input type="hidden" name="雇用形態[params]" value="必須">
+											<select class="custom-select" name="雇用形態[value]">
+												<option value="" selected="">---</option>
+												<option value="正社員（全国総合正社員）">正社員（全国総合正社員）</option>
+												<option value="正社員（地域限定正社員）">正社員（地域限定正社員）</option>
+												<option value="契約社員">契約社員</option>
+											</select>
+											<small class="">全国総合正社員：全国総合正社員：活躍領域は全国にある支店です。地域にとらわれず幅広くご活躍いただきます。<br>地域限定正社員：入社時に配属された支店が属するブロック内で勤務します。ブロック内で異動する可能性があります。</small>
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>お名前 </p><input type="hidden" name="お名前[params]" value="名前"><input class="form-control" type="text" name="お名前[value]">
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>お名前（フリガナ） </p><input type="hidden" name="お名前（フリガナ）[params]" value="必須"><input class="form-control" type="text" name="お名前（フリガナ）[value]">
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>電話番号 </p><input type="hidden" name="電話番号[params]" value="電話番号"><input class="form-control" type="text" name="電話番号[value]">
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>メールアドレス </p><input type="hidden" name="メールアドレス[params]" value="メール"><input class="form-control" type="text" name="メールアドレス[value]">
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>応募職種 </p>
+											<input type="hidden" name="応募職種[params]" value="必須">
+											<select class="custom-select" name="応募職種[value]">
+												<option selected="" value="">---</option>
+												<option value="企画営業">企画営業</option>
+												<option value="営業">営業</option>
+												<option value="コーディネーター">コーディネーター</option>
+												<option value="スーパーバイザー">スーパーバイザー</option>
+											</select>
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>希望勤務地（複数選択可）</p>
+											<input type="hidden" name="希望勤務地[params]" value="必須">
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="北海道札幌市" name="希望勤務地[value][]" value="北海道札幌市"><label class="custom-control-label" for="北海道札幌市">北海道札幌市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="北海道旭川市" name="希望勤務地[value][]" value="北海道旭川市"><label class="custom-control-label" for="北海道旭川市">北海道旭川市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="北海道千歳市" name="希望勤務地[value][]" value="北海道千歳市"><label class="custom-control-label" for="北海道千歳市">北海道千歳市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="北海道北見市" name="希望勤務地[value][]" value="北海道北見市"><label class="custom-control-label" for="北海道北見市">北海道北見市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="北海道釧路市" name="希望勤務地[value][]" value="北海道釧路市"><label class="custom-control-label" for="北海道釧路市">北海道釧路市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="青森県青森市" name="希望勤務地[value][]" value="青森県青森市"><label class="custom-control-label" for="青森県青森市">青森県青森市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="青森県八戸市" name="希望勤務地[value][]" value="青森県八戸市"><label class="custom-control-label" for="青森県八戸市">青森県八戸市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="宮城県仙台市" name="希望勤務地[value][]" value="宮城県仙台市"><label class="custom-control-label" for="宮城県仙台市">宮城県仙台市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="山形県山形市" name="希望勤務地[value][]" value="山形県山形市"><label class="custom-control-label" for="山形県山形市">山形県山形市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="栃木県宇都宮市" name="希望勤務地[value][]" value="栃木県宇都宮市"><label class="custom-control-label" for="栃木県宇都宮市">栃木県宇都宮市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="埼玉県さいたま市" name="希望勤務地[value][]" value="埼玉県さいたま市"><label class="custom-control-label" for="埼玉県さいたま市">埼玉県さいたま市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="千葉県船橋市" name="希望勤務地[value][]" value="千葉県船橋市"><label class="custom-control-label" for="千葉県船橋市">千葉県船橋市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="東京23区" name="希望勤務地[value][]" value="東京23区"><label class="custom-control-label" for="東京23区">東京23区</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="新潟県新潟市" name="希望勤務地[value][]" value="新潟県新潟市"><label class="custom-control-label" for="新潟県新潟市">新潟県新潟市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="新潟県長岡市" name="希望勤務地[value][]" value="新潟県長岡市"><label class="custom-control-label" for="新潟県長岡市">新潟県長岡市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="石川県金沢市" name="希望勤務地[value][]" value="石川県金沢市"><label class="custom-control-label" for="石川県金沢市">石川県金沢市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="静岡県静岡市" name="希望勤務地[value][]" value="静岡県静岡市"><label class="custom-control-label" for="静岡県静岡市">静岡県静岡市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="愛知県名古屋市" name="希望勤務地[value][]" value="愛知県名古屋市"><label class="custom-control-label" for="愛知県名古屋市">愛知県名古屋市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="京都府京都市" name="希望勤務地[value][]" value="京都府京都市"><label class="custom-control-label" for="京都府京都市">京都府京都市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="大阪府大阪市" name="希望勤務地[value][]" value="大阪府大阪市"><label class="custom-control-label" for="大阪府大阪市">大阪府大阪市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="兵庫県神戸市" name="希望勤務地[value][]" value="兵庫県神戸市"><label class="custom-control-label" for="兵庫県神戸市">兵庫県神戸市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="広島県広島市" name="希望勤務地[value][]" value="広島県広島市"><label class="custom-control-label" for="広島県広島市">広島県広島市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="愛媛県松山市" name="希望勤務地[value][]" value="愛媛県松山市"><label class="custom-control-label" for="愛媛県松山市">愛媛県松山市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="高知県高知市" name="希望勤務地[value][]" value="高知県高知市"><label class="custom-control-label" for="高知県高知市">高知県高知市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="福岡県北九州市" name="希望勤務地[value][]" value="福岡県北九州市"><label class="custom-control-label" for="福岡県北九州市">福岡県北九州市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="福岡県福岡市" name="希望勤務地[value][]" value="福岡県福岡市"><label class="custom-control-label" for="福岡県福岡市">福岡県福岡市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="熊本県熊本市" name="希望勤務地[value][]" value="熊本県熊本市"><label class="custom-control-label" for="熊本県熊本市">熊本県熊本市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="宮崎県宮崎市" name="希望勤務地[value][]" value="宮崎県宮崎市"><label class="custom-control-label" for="宮崎県宮崎市">宮崎県宮崎市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="鹿児島県鹿児島市" name="希望勤務地[value][]" value="鹿児島県鹿児島市"><label class="custom-control-label" for="鹿児島県鹿児島市">鹿児島県鹿児島市</label>
+											</div>
+											<div class="form-check form-check-inline m-2">
+												<input type="checkbox" class="custom-control-input form-check-input" id="沖縄県那覇市" name="希望勤務地[value][]" value="沖縄県那覇市"><label class="custom-control-label" for="沖縄県那覇市">沖縄県那覇市</label>
+											</div>
+											<p class="lead mt-5"><span class="badge badge-primary">任意</span>履歴書添付</p>
+											<p class="small text-danger">*ご用意のある方はお願いします。</p>
+											<input type="file" name="履歴書">
+											<p class="small">*ファイル形式は PDF、PowerPoint、Wordです。<br>*ファイルサイズは3MB以内でお願いします。</p>
+											<p class="lead mt-5"><span class="badge badge-primary">任意</span>職務経歴書添付</p>
+											<p class="small text-danger">*ご用意のある方はお願いします。</p>
+											<input type="file" name="職務経歴書">
+											<p class="small">*ファイル形式は PDF、PowerPoint、Wordです。<br>*ファイルサイズは3MB以内でお願いします。</p>
+											<p class="lead mt-5"><span class="badge badge-secondary">必須</span>個人情報保護方針</p>
+											<p>下記規約に同意いただいた方のみ、エントリーが可能です。</p>
+											<div class="custom-control custom-radio">
+												<input type="hidden" name="個人情報保護方針[params]" value="必須">
+												<input type="radio" id="customRadio1" class="custom-control-input" name="個人情報保護方針[value]" value="同意しました">
+												<label class="custom-control-label" for="customRadio1">同意する</label>
+											</div>
+											<pre class="pre-scrollable border">
+【利用目的】
+株式会社オープンループパートナーズ（以下当社）が取得した個人情報は、お問い合わせへの回答以外に使用することはございません。
+
+【第三者提供】
+当社は、お預かりした個人情報を、法令の規定または司法手続きに基づく要請による場合を除き、第三者に提供することはございません。
+
+【外部委託】
+当社は、お預かりした個人情報を委託することはございません。
+
+【情報提供の任意性】
+当社への個人情報の提供は任意となっています。ただし、情報に漏れやミスがある場合、お問い合わせへの適切な回答ができない場合がございます。
+
+【個人情報の開示等】
+個人情報の利用目的の通知、開示、訂正、追加または削除、利用又は提供の拒否、その他お問い合わせ等については、下記問い合わせ先までご一報ください。
+個人情報の取り扱いに関して、詳細は<a href="https://www.olp.co.jp/privacy/policy.html">個人情報保護方針</a>をご覧ください。
+
+＜個人情報に関するお問い合わせ先＞
+03-5368-3762
+privacyinfo@olp.co.jp
+個人情報保護管理者（HR本部 副本部長）
+					</pre>
+											<input type="submit" value="確認" class="btn-primary form-control-lg d-flex my-4 mx-auto">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
 					</div>
 				</div>
 			</div>
