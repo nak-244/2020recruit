@@ -58,3 +58,60 @@
     display: block !important;
   }
 }
+
+/* フッター追従 */
+#footer_fixed {
+  display: none
+}
+
+@media screen and (max-width:640px) {
+  .wrapper {
+    padding-bottom: 10.5%
+  }
+
+  #footer_fixed {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 100;
+    background: #0faeef;
+    box-shadow: rgba(0, 0, 0, .2) 0 0 5px 2px;
+  }
+
+  #footer_fixed ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 1.5% 10%;
+    margin: 0;
+  }
+
+  #footer_fixed ul li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  #footer_fixed ul li a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #footer_fixed ul li a span {
+    display: block;
+    font-size: 2.5vw;
+    margin-top: 0.5em;
+  }
+
+  #footer_fixed ul li img {
+    width: 6vw;
+    vertical-align: bottom;
+  }
+}
