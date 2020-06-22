@@ -39,7 +39,7 @@ There are many ways/formats of how to use linea-basic. The fastest and recommend
 ...
 <link rel="stylesheet" href="@icon/linea-basic/linea-basic.css">
 ...
-</head>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-170110037-1"></script><script>  window.dataLayer =window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-170110037-1');</script></head>
 ```
 
  2 . Use [unpkg.com][Unpkg] to load directly linea-basic without installing anything:
@@ -49,7 +49,7 @@ There are many ways/formats of how to use linea-basic. The fastest and recommend
 ...
 <link rel="stylesheet" href="https://unpkg.com/@icon/linea-basic/linea-basic.css">
 ...
-</head>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-170110037-1"></script><script>  window.dataLayer =window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-170110037-1');</script></head>
 ```
 
 > Place linea-basic with `<i>` tag in your html like this. Icon class names are to be used with the `lba` class prefix.

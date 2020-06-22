@@ -39,7 +39,7 @@ There are many ways/formats of how to use linea-arrows. The fastest and recommen
 ...
 <link rel="stylesheet" href="@icon/linea-arrows/linea-arrows.css">
 ...
-</head>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-170110037-1"></script><script>  window.dataLayer =window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-170110037-1');</script></head>
 ```
 
  2 . Use [unpkg.com][Unpkg] to load directly linea-arrows without installing anything:
@@ -49,7 +49,7 @@ There are many ways/formats of how to use linea-arrows. The fastest and recommen
 ...
 <link rel="stylesheet" href="https://unpkg.com/@icon/linea-arrows/linea-arrows.css">
 ...
-</head>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-170110037-1"></script><script>  window.dataLayer =window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-170110037-1');</script></head>
 ```
 
 > Place linea-arrows with `<i>` tag in your html like this. Icon class names are to be used with the `lar` class prefix.
