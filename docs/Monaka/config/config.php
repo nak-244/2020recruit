@@ -16,7 +16,7 @@ $adminName = "株式会社オープンループ グループ採用窓口";
 
 
 // 送信後に戻るURL
-$returnUrl = "https://www.olp.co.jp/lp/recruit/";
+$returnUrl = "https://www.olp.co.jp/recruit/";
 
 
 // 送信完了メッセージ
