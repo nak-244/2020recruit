@@ -3,6 +3,8 @@
 // ----------基本設定開始---------- //
 
 // 送信先メールアドレス
+// $adminMail = "job@openloop.co.jp,tsuyoshi.nakamura@openloop.co.jp";
+// $adminMail = "olpads3187+job@gmail.com";
 $adminMail = "job@openloop.co.jp,tsuyoshi.nakamura@openloop.co.jp";
 
 
